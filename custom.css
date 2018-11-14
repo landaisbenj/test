@@ -1,0 +1,30 @@
+@import url("../css/legacy.css"); /* Don't remove this line! */
+@import url("base.css"); /* Don't remove this line! */
+@import url("extras_and_animations.css"); /* Adds visual extras. */
+/*@import url("navigation_main_sidebar.css"); /* This transforms the main menu to a vertical menu on the left. */
+:root {
+  --main-color:gray;
+  --secondary-color:#fff;
+}
+
+body{
+  background: var(--main-color) !important;  
+}
+
+/*item*/
+
+body table[id^="itemtable"] tbody tr,
+body table#mobileitem{
+  background: var(--secondary-color) !important;
+  width: 250px;
+}
+
+/*item name*/
+div.item.statusNormal td#name{
+background: var(--main-color) !important;
+}
+
+[id^="selector"].btn-group{
+  display: block;
+}
+
