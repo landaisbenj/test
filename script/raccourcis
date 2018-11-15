@@ -1,0 +1,61 @@
+--------------------------------
+------ 	  USER SETTINGS	  ------
+--------------------------------
+
+-- rpi2
+domoticzIP = '127.0.0.1'	--'127.0.0.1'
+domoticzPORT = '8080'
+domoticzUSER = ''		
+domoticzPSWD = ''		
+domoticzPASSCODE = ''	-- pour interrupteur protégés
+domoticzURL = 'http://'..domoticzIP..':'..domoticzPORT
+-- rpi3
+rpi3 = "192.168.0.40"
+JarvisURL = 'http://'..rpi3..':8080'
+
+
+--------------------------------
+------     VARIABLES      ------
+--------------------------------
+commandArray = {}
+od = otherdevices
+dc = devicechanged
+uv = uservariables
+vc = uservariablechanged
+ca = commandArray
+
+--------------------------------------------------------------------------------------------------------
+--Configuration
+--------------------------------------------------------------------------------------------------------
+
+-- system linux
+luaDir = debug.getinfo(1).source:match("@?(.*/)")
+curl = '/usr/bin/curl -m 15 '		 							-- ne pas oublier l'espace à la fin
+
+
+-- chargement du fichier JSON.lua
+json = assert(loadfile(luaDir..'JSON.lua'))()
+
+------------------------------------------------------------------------------------------------------
+--			Raccourci
+------------------------------------------------------------------------------------------------------
+-- retourne l'heure actuelle ex: "12:45"
+heure = string.sub(os.date("%X"), 1, 5)
+
+-- retourne la date ex: "01:01"
+date = os.date("%d:%m")
+
+-- retourne l'heure du lever de soleil ex: "06:41"
+leverSoleil = string.sub(os.date("!%X",60*timeofday['SunriseInMinutes']), 1, 5)
+
+-- retourne l'heure du coucher de soleil ex: "22:15"
+coucherSoleil = string.sub(os.date("!%X",60*timeofday['SunsetInMinutes']), 1, 5)
+
+-- retourne le jour actuel en français ex: "mardi"
+days = {"dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"}
+jour = days[(os.date("%w")+1)]
+
+-- il fait jour
+dayTime = timeofday['Daytime']
+-- il fait nuit
+nightTime = timeofday['Nighttime']
