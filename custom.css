@@ -3,28 +3,109 @@
 @import url("extras_and_animations.css"); /* Adds visual extras. */
 /*@import url("navigation_main_sidebar.css"); /* This transforms the main menu to a vertical menu on the left. */
 :root {
-  --main-color:gray;
-  --secondary-color:#fff;
+  --main-color:#021a37;
+  --secondary-color:#f1f5fa;
+  --main-blue-color:#2f91c4;
+  --secondary-blue-color:#1d5c88;
 }
 
 body{
   background: var(--main-color) !important;  
 }
-
-/*item*/
-
-body table[id^="itemtable"] tbody tr,
-body table#mobileitem{
-  background: var(--secondary-color) !important;
-  width: 250px;
+/* Clean up */
+#main-view .row.divider:before,
+#main-view .row.divider:after,
+#main-view .row.divider .clearfix{
+	display:none;
 }
 
-/*item name*/
-div.item.statusNormal td#name{
-background: var(--main-color) !important;
+.item{
+	margin:0!important;
+	}
+
+/* Bannercontent */
+#main-view .row.divider {
+	display: grid;
+	gap:10px;
+
+  justify-items: center;
 }
 
-[id^="selector"].btn-group{
-  display: block;
+@media (max-width: 767px){
+	div.bannercontent .row.divider{
+		grid-template-columns:repeat(1,1fr);
+	  }
+}
+@media (min-width: 768px){
+	div.bannercontent .row.divider{
+		grid-template-columns:repeat(2,1fr);
+	  }
+}
+@media (min-width: 980px){
+	div.bannercontent .row.divider{
+		grid-template-columns:repeat(3,1fr);
+	  }
+}
+@media (min-width: 1200px){
+	div.bannercontent .row.divider{
+		grid-template-columns:repeat(4,1fr);
+	  }
 }
 
+/* Item */
+table[id^="itemtable"] tbody tr {
+  margin:0!important;
+}
+/* Option bar */
+table[id^="itemtable"] tbody tr td.options{
+  display:flex !important;
+  vertical-align:middle;
+  text-align: center;
+  justify-content: space-around;
+  border-top:1px solid var(--main-blue-color);
+  margin-top:5px !important;
+}
+table[id^="itemtable"] tbody tr td.options img{
+  height: 100%;
+	width: auto;
+	margin: auto;
+}
+table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]{
+  background:none;
+  color:var(--secondary-blue-color);
+  border-radius: 0px;
+  flex-shrink:1;
+  flex-grow:1;
+  margin: auto;
+}
+table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]:hover{
+	background: black;
+  color:white;
+	
+}
+table[id^="itemtable"] tbody tr td.options a[class^="btnsmall-sel"]{
+	background: violet;	
+}
+/* Btn on switch selector */
+table[id^="itemtable"] tbody tr div[id^="select"].btn-group{
+    display:block;
+    overflow:auto;
+}
+
+table[id^="itemtable"] tbody tr div[id^="select"].btn-group::-webkit-scrollbar{
+    display:none;
+}
+/* Second and third img */
+table[id^="itemtabledouble"] tbody tr #img2 img,
+table[id^="itemtable"] tbody tr #img3 img{
+    width:auto;
+    height:32px;
+}
+
+
+
+/* Other */
+
+.dataTables_wrapper {
+    margin-bottom: 16px;
+}
