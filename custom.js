@@ -9,11 +9,12 @@ const holder = $('#holder');
             if (item.type === 'childList'){
 
                 if (item.addedNodes.length > 0){
-                    console.log('New div is being added!');
+                    //console.log('New div is being added!');
                     
                     for (var i = 0; i < item.addedNodes.length; i++) {
                         if (item.addedNodes[i].id === "dashcontent") {
                             console.log('  "' + item.addedNodes[i].id + '" added');
+                            alert('  "' + item.addedNodes[i].id + '" added');
                         }
                     }
                     
