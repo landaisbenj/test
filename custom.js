@@ -1,3 +1,7 @@
+  if ($('#main-view div.row').next().length != 0 ){
+console.log('sans rien ok')
+  }
+
 $( document ).ready(function() {
 
   if ($('#main-view div.row').next().length != 0 ){
