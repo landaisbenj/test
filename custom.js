@@ -12,7 +12,9 @@ const holder = $('#holder');
                     console.log('New div is being added!');
                     
                     for (var i = 0; i < item.addedNodes.length; i++) {
-                        console.log('  "' + item.addedNodes[i].id + '" added');
+                        if item.addedNodes[i].id === "dashcontent" {
+                            console.log('  "' + item.addedNodes[i].id + '" added');
+                        }
                     }
                     
                 }
