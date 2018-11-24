@@ -12,7 +12,7 @@ const holder = $('#holder');
                     console.log('New div is being added!');
                     
                     for (var i = 0; i < item.addedNodes.length; i++) {
-                        console.log('  "' + item.addedNodes[i].id + '" added');
+                        console.log('  "' + item.addedNodes[i].tagName + '" added');
                     }
                     
                 }
