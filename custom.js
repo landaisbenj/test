@@ -9,7 +9,12 @@ const holder = $('#holder');
             if (item.type === 'childList'){
 
                 if (item.addedNodes.length > 0){
-                    console.log('new div is being added! ' + item.tagName );
+                    console.log('New div is being added!');
+                    
+                    for (var i = 0; i < mutation.addedNodes.length; i++) {
+                        console.log('  "' + mutation.addedNodes[i].textContent + '" added');
+                    }
+                    
                 }
 
             }
