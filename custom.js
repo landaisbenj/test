@@ -28,9 +28,3 @@ console.log('ajax complete ok')
   }
 });
 
-$( window ).load(function() {
-
-  if ($('#main-view div.row').next().length != 0 ){
-console.log('windows load ok')
-  }
-});
