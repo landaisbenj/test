@@ -15,9 +15,45 @@ body{
 /* Clean up */
 #main-view .row.divider:before,
 #main-view .row.divider:after,
-#main-view .row.divider .clearfix{
+#main-view .row.divider .clearfix,
+div.navbar-inner a#version{
 	display:none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .item{
 	margin:0!important;
