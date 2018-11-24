@@ -14,7 +14,7 @@ const holder = $('#holder');
     });
 
     // Start observing the target node for configured mutations
-    observer.observe( holder, { 
+    observer.observe( holder[0], { 
         attributes: true, 
         childList: true, 
         subtree: true 
