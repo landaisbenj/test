@@ -1,26 +1,24 @@
 
-$( document ).ready(function() {
-
-console.log('Ready ok')
-		
-
-});
-
 document.addEventListener('DOMContentLoaded', function () {
 
-console.log('domcontent ok')
-  
-});
+    var observer = new MutationObserver(function(mutationsList, observer) {
+        $(mutationsList).each(function(index, item){
+            if (item.type === 'childList'){
 
-$(document).ajaxSuccess(function (event, xhr, settings) {
+                if (item.addedNodes.length > 0){
+                    console.log('new div is being added! ' + item.name );
+                }
 
-console.log('ajax success ok')
- 
-});
+            }
+        });
+    });
 
-$(document).ajaxComplete(function (event, xhr, settings) {
-
-console.log('ajax complete ok')
+    // Start observing the target node for configured mutations
+    observer.observe( document, { 
+        attributes: true, 
+        childList: true, 
+        subtree: true 
+    });	
   
 });
 
