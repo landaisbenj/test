@@ -1,7 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.log('DomContent Loaded')
 const holder = $('#holder');
     var observer = new MutationObserver(function(mutationsList, observer) {
+    console.log('Mutation Loaded')
         $(mutationsList).each(function(index, item){
             if (item.type === 'childList'){
 
