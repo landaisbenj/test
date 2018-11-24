@@ -9,7 +9,7 @@ const holder = $('#holder');
     console.log('Mutation Loaded')
     
         $(mutationsList).each(function(index, item){
-			var mutationTest = false,
+			var mutationTest = true,
             if (item.type === 'childList'){
 
                 if (item.addedNodes.length > 0){
