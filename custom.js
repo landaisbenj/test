@@ -14,7 +14,8 @@ const holder = $('#holder');
                     for (var i = 0; i < item.addedNodes.length; i++) {
                         if ((item.addedNodes[i].id === "dashcontent") || (item.addedNodes[i].id === "lightcontent")) {
                             console.log('  "' + item.addedNodes[i].id + '" added');
-                            alert('  "' + item.addedNodes[i].id + '" added');
+                            console.log('  "' + item.addedNodes[i].id + '" added');
+                            alert($('#main-view div.row').next().length);
                         }
                     }
                     
