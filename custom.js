@@ -30,11 +30,24 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     //new navbar 
-    let navBar =  $('.navbar').append('<button class="menu-toggle"></button>');
+    $('.navbar').prepend('<header class="container-logo"></header>');
+    let navBarHeader = $('.navbar header.container-logo');
+    let navBarHeaderButton = '<button class="menu-toggle"></button>';
+    let navBarLogo = 
+	
+	
+	
+	'<div id="notify"></div>'
+	'<img id="notyIcon" src="images/notify.png"/>'
+	'<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="' + language.type_to_search + '" title="' + language.type_to_search + '">'
+	
+	
+	
+	
+    .append('<button class="menu-toggle"></button>');
 	let navBarInner = $(".navbar-inner");
-	let navBarToggle = $('.menu-toggle');
 	let containerLogo = '<header class="logo"><div class="container-logo">';
-	containerLogo += '<img class="header__icon" src="images/logo.png">';
+	containerLogo += '<img class="header-icon" src="images/logo.png">';
 	$('<style>#login:before {content: url(../images/logo.png) !important;}</style>').appendTo('head');
 	containerLogo += '</div></header>';
 	$(containerLogo).insertBefore('.navbar-inner');
