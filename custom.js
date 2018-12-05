@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     //new navbar 
-    $('.navbar').prepend('<header class="container-logo"></header>');
+    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top').prepend('<header class="container-logo"></header>');
     let navBarHeader = $('.navbar header.container-logo');
     let navBarHeaderButton = '<button class="menu-toggle"></button>';
     let navBarLogo = 
