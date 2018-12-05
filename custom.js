@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     //console.log('New div is being added!');
                     
                     for (var i = 0; i < item.addedNodes.length; i++) {
-			    if ($('navbar-fixed-top').length != 0){
+			    if ($('.navbar-fixed-top').length != 0){
 				    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top').prepend('<header class="container-logo"></header>');
-			    }
+			    };
 			    
 			    
 			    
                         if ((item.addedNodes[i].id === "dashcontent") || (item.addedNodes[i].id === "lightcontent") || (item.addedNodes[i].id === "scenecontent") || (item.addedNodes[i].id === "tempwidgets") || (item.addedNodes[i].id === "weatherwidgets") || (item.addedNodes[i].id === "utilitycontent")) {
                             console.log('  "' + item.addedNodes[i].id + '" added');
-                        }
+                        };
                     }
                     
                 }
