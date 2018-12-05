@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //new navbar 
 
     $('div.navbar').prepend('<header id="container-logo"></header>');
-    $('header.container-logo').append('<button class="menu-toggle"></button>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>').append('<input type="text" id="searchInput" onkeyup="" placeholder="Rechercher" title="Rechercher">');
+    $('header#container-logo').append('<button class="menu-toggle"></button>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>').append('<input type="text" id="searchInput" onkeyup="" placeholder="Rechercher" title="Rechercher">');
 $('<img id="notyIcon" src="images/notify.png"/>').appendTo('#notify')
     
     
