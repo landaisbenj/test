@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     //console.log('New div is being added!');
                     
                     for (var i = 0; i < item.addedNodes.length; i++) {
+			    if ($('navbar-fixed-top').length != 0){
+				    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top').prepend('<header class="container-logo"></header>');
+			    }
+			    
+			    
+			    
                         if ((item.addedNodes[i].id === "dashcontent") || (item.addedNodes[i].id === "lightcontent") || (item.addedNodes[i].id === "scenecontent") || (item.addedNodes[i].id === "tempwidgets") || (item.addedNodes[i].id === "weatherwidgets") || (item.addedNodes[i].id === "utilitycontent")) {
                             console.log('  "' + item.addedNodes[i].id + '" added');
                         }
@@ -30,28 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     //new navbar 
-    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top').prepend('<header class="container-logo"></header>');
+    
     let navBarHeader = $('.navbar header.container-logo');
     let navBarHeaderButton = '<button class="menu-toggle"></button>';
-    let navBarLogo = 
-	
-	
-	
-	'<div id="notify"></div>'
-	'<img id="notyIcon" src="images/notify.png"/>'
-	'<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="' + language.type_to_search + '" title="' + language.type_to_search + '">'
-	
-	
-	
-	
-    .append('<button class="menu-toggle"></button>');
-	let navBarInner = $(".navbar-inner");
-	let containerLogo = '<header class="logo"><div class="container-logo">';
-	containerLogo += '<img class="header-icon" src="images/logo.png">';
-	$('<style>#login:before {content: url(../images/logo.png) !important;}</style>').appendTo('head');
-	containerLogo += '</div></header>';
-	$(containerLogo).insertBefore('.navbar-inner');
-    
+
     
     
 });
