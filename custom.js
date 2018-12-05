@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     
                     for (var i = 0; i < item.addedNodes.length; i++) {
 			    if ($('.navbar-fixed-top').length != 0){
-				    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top').prepend('<header class="container-logo"></header>');
+				    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top');
 			    };
 			    
 			    
@@ -36,25 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     //new navbar 
-    
-    let navBarHeader = $('.navbar header.container-logo button.menu-toggle');
-    let navBarHeaderButton = '<button class="menu-toggle"></button>';
 
-        let navBarLogo = 
-	
-	
-	
-	'<div id="notify"></div>'
-	'<img id="notyIcon" src="images/notify.png"/>'
-	'<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="' + language.type_to_search + '" title="' + language.type_to_search + '">'
-	
-	
-	let navBarInner = $(".navbar-inner");
-	let containerLogo = '<header class="logo"><div class="container-logo">';
-	containerLogo += '<img class="header-icon" src="images/logo.png">';
-	$('<style>#login:before {content: url(../images/logo.png) !important;}</style>').appendTo('head');
-	containerLogo += '</div></header>';
-	$(containerLogo).insertBefore('.navbar-inner');
+    $('div.navbar').prepend('<header class="container-logo"></header>');
+    $('header.container-logo').append('<button class="menu-toggle"></button>').append('<div id="notify"></div>').append('<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="' + language.type_to_search + '" title="' + language.type_to_search + '">');
+
     
     
 });
