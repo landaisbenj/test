@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top');
 			    };
 			    
-			    console.log(item.addedNodes[i].id)
+			    console.log('test ' + item.addedNodes[i])
 			    
                         if ((item.addedNodes[i].id === "dashcontent") || (item.addedNodes[i].id === "lightcontent") || (item.addedNodes[i].id === "scenecontent") || (item.addedNodes[i].id === "tempwidgets") || (item.addedNodes[i].id === "weatherwidgets") || (item.addedNodes[i].id === "utilitycontent")) {
                             console.log('  "' + item.addedNodes[i].id + '" added');
