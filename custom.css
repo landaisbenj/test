@@ -6,11 +6,17 @@
   --main-color:#021a37;
   --secondary-color:#f1f5fa;
   --main-blue-color:#2f91c4;
-  --secondary-blue-color:#1d5c88;
+  --secondary-blue-color:#0bcdc7;
+  --main-item-color:white;
 }
 
 body{
-  background: var(--main-color) !important;  
+  background: var(--secondary-color) !important;
+  width: 100%;
+  color:black;
+  overflow-x: hidden;
+  
+  position: relative;
 }
 /* Clean up */
 #main-view .row.divider:before,
@@ -20,20 +26,60 @@ div.navbar-inner a#version{
 	display:none;
 }
 
+div.navbar{
+	padding:0!important;
+}
 
+div.navbar-inner{
+	border:none;
+}
 
+header#container-logo {
+  background: var(--secondary-blue-color);
+  background: -moz-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, var(--secondary-blue-color)), color-stop(100%, var(--main-blue-color)));
+  background: -webkit-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: -o-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: -ms-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: linear-gradient(to right, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0bcdc7", endColorstr="var(--main-blue-color)", GradientType=1 );
+  
+  display:flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  
+  width:auto;
+  padding:0 10%;
+  align-items: center;
+  justify-content: space-between;
+  
+  z-index:1000;
+}
 
+header#container-logo button{
+	width:20px;
+	height:20px;
+}
 
+#appnavbar li a{
+	background:none;
+  color:black;
+  text-shadow: none;
+  border:none;
+  border-radius:0;
+  border-bottom:2px solid var(--main-blue-color);
+}
 
+#appnavbar li a:hover{
+	background:var(--main-blue-color)!important;
+}
 
+#holder div.container-fluid {
 
+    padding: 0 10% !important;
 
-
-
-
-
-
-
+}
 
 
 
@@ -90,7 +136,10 @@ div.navbar-inner a#version{
 
 /* Item */
 table[id^="itemtable"] tbody tr {
-  margin:0!important;
+  margin:0 !important;
+  background-color:var(--main-item-color) !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  
 }
 /* Option bar */
 table[id^="itemtable"] tbody tr td.options{
