@@ -14,9 +14,6 @@ body{
   background: var(--secondary-color) !important;
   width: 100%;
   color:black;
-  overflow-x: hidden;
-  
-  position: relative;
 }
 /* Clean up */
 #main-view .row.divider:before,
@@ -57,7 +54,7 @@ header#container-logo {
   z-index:1000;
 }
 
-header#container-logo button{
+header#container-logo div#header-menu{
 	width:20px;
 	height:20px;
 }
@@ -83,7 +80,10 @@ header#container-logo button{
 
 
 
-
+#holder{
+  
+  
+}
 
 
 
