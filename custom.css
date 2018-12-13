@@ -21,7 +21,7 @@ body{
 #main-view .row.divider .clearfix,
 div.navbar-inner a#version,
 /*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
-	display:none;
+	display:none !important;
 }
 
 div.navbar{
