@@ -19,7 +19,8 @@ body{
 #main-view .row.divider:before,
 #main-view .row.divider:after,
 #main-view .row.divider .clearfix,
-div.navbar-inner a#version{
+div.navbar-inner a#version,
+/*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
 	display:none;
 }
 
@@ -96,7 +97,7 @@ header#container-logo div#header-menu{
 
 
 .navbar .nav .dropdown-menu{
-	background-color:var(--secondary-color);
+	background:var(--secondary-color);
 }
 
 
