@@ -24,12 +24,16 @@ div.navbar-inner a#version,
 	display:none !important;
 }
 
-div.navbar{
-	padding:0!important;
-}
-
+div.navbar,
+.container-fluid,
+.bannercontent,
+.container,
 div.navbar-inner{
-	border:none;
+	padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+	border: none;
 }
 
 
