@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top');
     };
     $('div.navbar').prepend('<header id="container-logo"></header>');
-    $('header#container-logo').append('<div id="header-menu"></div>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>').append('<input type="text" id="searchInput" onkeyup="" placeholder="Rechercher" title="Rechercher">');
+    $('header#container-logo').append('<div id="header-menu"></div>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>').append('<div id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></div>');
     $('<img id="notyIcon" src="images/notify.png"/>').appendTo('#notify')
     
     
