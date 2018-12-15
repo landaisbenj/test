@@ -71,12 +71,15 @@ height: 15px;
   content: url('../images/searchicon.png');
   color:white;
   margin: auto;
+  cursor: pointer;
 }
 
 #search::after{
+  display: none;
   content: url('../images/crossicon.png');
   color:white;
   margin: auto;
+  cursor: pointer;
 }
 
 #search input{
