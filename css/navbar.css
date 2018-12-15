@@ -8,16 +8,19 @@ header#container-logo {
   background: linear-gradient(to right, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0bcdc7", endColorstr="var(--main-blue-color)", GradientType=1 );
   
-  display:flex;
+  display:grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap:10px;
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  padding: 5px 10%;
   
   width:auto;
   align-items: center;
-  justify-content: space-around;
+  /*! justify-content: space-around; */
   
   z-index:1000;
+  align-items: center;
 }
 
 header#container-logo div#header-menu{
