@@ -74,7 +74,7 @@ height: 15px;
 }
 
 #search::after{
-  content: url('../images/searchicon.png');
+  content: url('../images/crossicon.png');
   color:white;
   margin: auto;
 }
