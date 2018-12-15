@@ -15,6 +15,7 @@ body{
   width: 100%;
   color:black;
 }
+
 /* Clean up */
 #main-view .row.divider:before,
 #main-view .row.divider:after,
@@ -32,75 +33,10 @@ div.navbar-inner{
 	border:none;
 }
 
-header#container-logo {
-  background: var(--secondary-blue-color);
-  background: -moz-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, var(--secondary-blue-color)), color-stop(100%, var(--main-blue-color)));
-  background: -webkit-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
-  background: -o-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
-  background: -ms-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
-  background: linear-gradient(to right, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0bcdc7", endColorstr="var(--main-blue-color)", GradientType=1 );
-  
-  display:flex;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  
-  width:auto;
-  padding:0 10%;
-  align-items: center;
-  justify-content: space-between;
-  
-  z-index:1000;
-}
 
-header#container-logo div#header-menu{
-	width:20px;
-	height:20px;
-}
+/*New design*/
 
-#appnavbar li a{
-	background:none;
-  color:black;
-  text-shadow: none;
-  border:none;
-  border-radius:0;
-  border-bottom:2px solid var(--main-blue-color);
-}
-
-#appnavbar li a:hover{
-	background:var(--main-blue-color)!important;
-}
-
-#holder div.container-fluid {
-
-    padding: 0 10% !important;
-
-}
-
-
-
-#holder{
-  
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-.navbar .nav .dropdown-menu{
-	background:var(--secondary-color);
-}
-
-
+@import url("css/navbar.css"); /* Adds visual extras. */
 
 
 
@@ -189,12 +125,4 @@ table[id^="itemtabledouble"] tbody tr #img2 img,
 table[id^="itemtable"] tbody tr #img3 img{
     width:auto;
     height:32px;
-}
-
-
-
-/* Other */
-
-.dataTables_wrapper {
-    margin-bottom: 16px;
 }
