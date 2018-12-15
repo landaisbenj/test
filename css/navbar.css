@@ -1,0 +1,44 @@
+header#container-logo {
+  background: var(--secondary-blue-color);
+  background: -moz-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, var(--secondary-blue-color)), color-stop(100%, var(--main-blue-color)));
+  background: -webkit-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: -o-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: -ms-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  background: linear-gradient(to right, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0bcdc7", endColorstr="var(--main-blue-color)", GradientType=1 );
+  
+  display:flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  
+  width:auto;
+  align-items: center;
+  justify-content: space-around;
+  
+  z-index:1000;
+}
+
+header#container-logo div#header-menu{
+height: 15px;
+  width: 20px;
+  cursor: pointer;
+  background:linear-gradient(to bottom, var(--main-item-color) 0%, var(--main-item-color) 16%, transparent 16%, transparent 42%, var(--main-item-color) 42%, var(--main-item-color) 58%, transparent 58%, transparent 84%, var(--main-item-color) 84%, var(--main-item-color) 100%);
+}
+
+#appnavbar li a{
+	background:none;
+  color:black;
+  text-shadow: none;
+  border:none;
+  border-radius:0;
+  border-bottom:2px solid var(--main-blue-color);
+}
+
+#appnavbar li a:hover{
+	background:var(--main-blue-color)!important;
+}
+.navbar .nav .dropdown-menu{
+	background:var(--secondary-color);
+}
