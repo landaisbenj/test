@@ -76,6 +76,10 @@ margin: 1% auto !important;
 width: 90%;
 }
 
+div[class^="status"] td#name {
+  border:none !important;
+}
+
 /*New design*/
 
 /* */
@@ -95,13 +99,30 @@ table[id^="itemtable"] tbody tr {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   
 }
+
+
+div.item.statusNormal td#name {
+background-color: transparent;
+}
+
+div.item.statusTimeout tbody tr {
+background-color: red !important;
+}
+
+div.item.statusLowBattery tbody tr {
+background-color: yellow !important;
+}
+div.item.statusProtected tbody tr {
+background-color: gray !important;
+}
+
 /* Option bar */
 table[id^="itemtable"] tbody tr td.options{
   display:flex !important;
   vertical-align:middle;
   text-align: center;
   justify-content: space-around;
-  border-top:1px solid var(--main-blue-color);
+  border-top:1px solid var(--main-color);
   margin-top:5px !important;
 }
 table[id^="itemtable"] tbody tr td.options img{
@@ -111,7 +132,7 @@ table[id^="itemtable"] tbody tr td.options img{
 }
 table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]{
   background:none;
-  color:var(--secondary-blue-color);
+  color:var(--main-color);
   border-radius: 0px;
   flex-shrink:1;
   flex-grow:1;
