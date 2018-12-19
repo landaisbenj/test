@@ -27,12 +27,12 @@ div.navbar-inner a#version,
 div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
-div#holder .bannercontent,
+div#holder > div.container-fluid > .bannercontent,
 div#holder #main-view > *{
 	margin:0 !important;
 	padding:0 !important;
 	border:none;
-	width: 100%;
+  width: 100%;
 }
 
 
