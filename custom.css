@@ -35,6 +35,10 @@ div#holder #main-view > *{
   width: 100%;
 }
 
+div#holder > div.container-fluid > .bannercontent{
+margin: 1% auto 0 auto !important;
+width: 90%;
+}
 
 /*New design*/
 
