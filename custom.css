@@ -25,15 +25,14 @@ div.navbar-inner a#version,
 }
 
 div.navbar,
-.container-fluid,
-.bannercontent,
-.container,
-div.navbar-inner{
-	padding: 0 !important;
-  margin: 0 !important;
-  width: auto !important;
-  height: auto !important;
-	border: none;
+div.navbar-inner,
+div#holder > div.container-fluid,
+div#holder .bannercontent,
+div#holder #main-view > *{
+	margin:0 !important;
+	padding:0 !important;
+	border:none;
+	width: 100%;
 }
 
 
