@@ -15,6 +15,10 @@ body{
   color:black;
 }
 
+#copyright{
+  position: relative;
+}
+
 /* Clean up */
 #main-view .row.divider:before,
 #main-view .row.divider:after,
@@ -28,7 +32,39 @@ div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
 div#holder > div.container-fluid > .bannercontent,
-div#holder #main-view > *{
+div#holder #main-view > *,
+
+#main-view #dashcontent .row.divider > *,
+#main-view #dashcontent .row.divider > * > *,
+#main-view #dashcontent .row.divider > * > * > *,
+#main-view #dashcontent .row.divider > * > * > * > *,
+#main-view #dashcontent .row.divider > * > * > * > * > *,
+#main-view #lightcontent .row.divider > *,
+#main-view #lightcontent .row.divider > * > *,
+#main-view #lightcontent .row.divider > * > * > *,
+#main-view #lightcontent .row.divider > * > * > * > *,
+#main-view #lightcontent .row.divider > * > * > * > * > *,
+#main-view #scenecontent .row.divider > *,
+#main-view #scenecontent .row.divider > * > *,
+#main-view #scenecontent .row.divider > * > * > *,
+#main-view #scenecontent .row.divider > * > * > * > *,
+#main-view #tempwidgets.row.divider > dztemperaturewidget,
+#main-view #tempwidgets.row.divider > dztemperaturewidget > *,
+#main-view #tempwidgets.row.divider > dztemperaturewidget > * > *,
+#main-view #tempwidgets.row.divider > dztemperaturewidget > * > * > *,
+#main-view #tempwidgets.row.divider > dztemperaturewidget > * > * > * > *,
+#main-view #tempwidgets.row.divider > dztemperaturewidget > * > * > * > * > *,
+#main-view #weatherwidgets.row.divider > dzweatherwidget,
+#main-view #weatherwidgets.row.divider > dzweatherwidget > *,
+#main-view #weatherwidgets.row.divider > dzweatherwidget > * > *,
+#main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > *,
+#main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > *,
+#main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > * > *,
+#main-view #utilitycontent .row.divider > *,
+#main-view #utilitycontent .row.divider > * > *,
+#main-view #utilitycontent .row.divider > * > * > *,
+#main-view #utilitycontent .row.divider > * > * > * > *,
+#main-view #utilitycontent .row.divider > * > * > * > * > *{
 	margin:0 !important;
 	padding:0 !important;
 	border:none;
@@ -36,43 +72,20 @@ div#holder #main-view > *{
 }
 
 div#holder > div.container-fluid > .bannercontent{
-margin: 1% auto 0 auto !important;
+margin: 1% auto !important;
 width: 90%;
 }
 
 /*New design*/
 
-.item{
-	margin:0!important;
-	}
-
-/* Bannercontent */
+/* */
 #main-view .row.divider {
 	display: grid;
-	gap:10px;
-
-  justify-items: center;
-}
-
-@media (max-width: 767px){
-	div.bannercontent .row.divider{
-		grid-template-columns:repeat(1,1fr);
-	  }
-}
-@media (min-width: 768px){
-	div.bannercontent .row.divider{
-		grid-template-columns:repeat(2,1fr);
-	  }
-}
-@media (min-width: 980px){
-	div.bannercontent .row.divider{
-		grid-template-columns:repeat(3,1fr);
-	  }
-}
-@media (min-width: 1200px){
-	div.bannercontent .row.divider{
-		grid-template-columns:repeat(4,1fr);
-	  }
+	gap:20px;
+  justify-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+	grid-template-columns:repeat(4,370px);
 }
 
 /* Item */
