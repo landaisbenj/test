@@ -11,15 +11,6 @@
   --main-item-color:white;
 }
 
-body{
-  background: var(--secondary-color) !important;
-  width: 100%;
-  color:black;
-}
-
-#copyright{
-  position: relative;
-}
 
 /* Clean up */
 #main-view .row.divider:before,
@@ -29,7 +20,7 @@ div.navbar-inner a#version,
 /*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
 	display:none !important;
 }
-
+body,
 div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
@@ -83,6 +74,11 @@ div[class^="status"] td#name {
 }
 
 /*New design*/
+
+body{
+  background: var(--secondary-color) !important;
+  color:black;
+}
 
 /* */
 #main-view .row.divider {
