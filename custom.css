@@ -1,5 +1,7 @@
 @import url("../css/legacy.css"); /* Don't remove this line! */
 @import url("css/navbar.css"); /* Adds visual extras. */
+@import url("css/media/min 992.css"); /* Adds visual extras. */
+@import url("css/media/max 480.css"); /* Adds visual extras. */
 
 :root {
   --main-color:#021a37;
