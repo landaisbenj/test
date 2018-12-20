@@ -1,1 +1,12 @@
 
+@media screen and (min-width: 992px){
+
+
+
+#main-view .row.divider {
+	grid-template-columns:repeat(4,370px);
+}
+
+
+
+}
