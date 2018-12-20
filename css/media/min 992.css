@@ -4,7 +4,7 @@
 
 
 #main-view .row.divider {
-	grid-template-columns:repeat(4,370px);
+	grid-template-columns:repeat(4,370px) !important;
 }
 
 
