@@ -89,7 +89,7 @@ div[class^="status"] td#name {
   justify-content: center;
   justify-items: stretch;
   align-items: stretch;
-	grid-template-columns:repeat(4,370px);
+	grid-template-columns:repeat(3,370px);
 }
 
 /* Item */
