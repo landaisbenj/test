@@ -40,13 +40,17 @@ height: 15px;
 }
 
 #appnavbar li a:hover{
-	background:var(--main-blue-color)!important;
+	background:var(--main-blue-color) !important;
+
 }
 .navbar .nav .dropdown-menu{
 	background:var(--secondary-color);
 }
 
-
+.navbar .nav .current_page_item > a{
+	background:var(--main-blue-color)!important;
+  
+}
 
 
 
