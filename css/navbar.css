@@ -106,19 +106,3 @@ height: 15px;
 }
 
 
-
-
-
-
-
-
-
-
-#searchInput{
-     transform: scaleX(1);
-     transition:transform 1s ease;
-}
-#searchInput:hover{
-     transform: scaleX(1);
-}
-
