@@ -3,6 +3,7 @@
 #main-view .row.divider:after,
 #main-view .row.divider .clearfix,
 div.navbar-inner a#version,
+/* suppression */ [id^="itemtable"] tbody tr td#type > br,
 /*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
 	display:none !important;
 }
@@ -50,3 +51,4 @@ width: 90%;
 	border:none;
 	border-radius:0;
 }
+
