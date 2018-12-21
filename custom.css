@@ -19,27 +19,18 @@ body{
   color:black;
 }
 
-
-
-
-
-
-
-
-
 /* */
 #main-view .row.divider {
 	display: grid;
 	gap:20px;
   justify-content: center;
-	grid-template-columns:repeat(3,370px);
-  grid-auto-rows: 1fr
+	grid-template-columns:repeat(3, 25vw);
+  grid-auto-rows: 1fr;
 }
 
 /* Item */
 table[id^="itemtable"] tbody tr {
   margin:0 !important;
-  height: auto;
   
   display: grid;
   gap:10px;
@@ -50,7 +41,7 @@ table[id^="itemtable"] tbody tr {
   
 }
 
-/* status */
+/* item status */
 div.item.statusNormal tbody tr {
 background-color: transparent;
 }
@@ -67,6 +58,35 @@ background-color: gray !important;
 }
 
 
+/* Type div slider, btn selector and selector */
+[id^="itemtable"] tbody tr td#type > div{
+  height: 26px;
+  width: 100%;
+}
+/* Slider */
+[id^="itemtable"] tbody tr td#type > div#slider,
+/* Selector */
+[id^="itemtable"] tbody tr td#type > div span[id^="selector"],
+/* BTN Selector */
+[id^="itemtable"] tbody tr td#type > div[id^="selector"]{
+  width: 100%;
+  margin:0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,11 +100,7 @@ table[id^="itemtable"] tbody tr td.options{
   border-top:1px solid var(--main-color);
   margin-top:5px !important;
 }
-table[id^="itemtable"] tbody tr td.options img{
-  height: 100%;
-	width: auto;
-	margin: auto;
-}
+
 table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]{
   background:none;
   color:var(--main-color);
@@ -101,18 +117,6 @@ table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]:hover{
 table[id^="itemtable"] tbody tr td.options a[class^="btnsmall-sel"]{
 	background: violet;	
 }
-/* Btn on switch selector */
-table[id^="itemtable"] tbody tr div[id^="select"].btn-group{
-    display:block;
-    overflow:auto;
-}
 
-table[id^="itemtable"] tbody tr div[id^="select"].btn-group::-webkit-scrollbar{
-    display:none;
-}
-/* Second and third img */
-table[id^="itemtabledouble"] tbody tr #img2 img,
-table[id^="itemtable"] tbody tr #img3 img{
-    width:auto;
-    height:32px;
-}
+
+
