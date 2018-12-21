@@ -2,7 +2,8 @@
 @import url("css/navbar.css"); /* Adds visual extras. */
 @import url("css/media/min 992.css"); /* Adds visual extras. */
 @import url("css/media/max 480.css"); /* Adds visual extras. */
-
+@import url("css/clean.css"); /*Clean old css style on domoticz*/
+	
 :root {
   --main-color:#021a37;
   --secondary-color:#f1f5fa;
@@ -12,62 +13,7 @@
 }
 
 
-/* Clean up */
-#main-view .row.divider:before,
-#main-view .row.divider:after,
-#main-view .row.divider .clearfix,
-div.navbar-inner a#version,
-/*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
-	display:none !important;
-}
-body,
-div.navbar,
-div.navbar-inner,
-div#holder > div.container-fluid,
-div#holder > div.container-fluid > .bannercontent,
-div#holder #main-view > *,
 
-#main-view #dashcontent .row.divider > *,
-#main-view #dashcontent .row.divider > * > *,
-#main-view #dashcontent .row.divider > * > * > *,
-#main-view #dashcontent .row.divider > * > * > * > *,
-#main-view #dashcontent .row.divider > * > * > * > * > *,
-#main-view #lightcontent .row.divider > *,
-#main-view #lightcontent .row.divider > * > *,
-#main-view #lightcontent .row.divider > * > * > *,
-#main-view #lightcontent .row.divider > * > * > * > *,
-#main-view #lightcontent .row.divider > * > * > * > * > *,
-#main-view #scenecontent .row.divider > *,
-#main-view #scenecontent .row.divider > * > *,
-#main-view #scenecontent .row.divider > * > * > *,
-#main-view #scenecontent .row.divider > * > * > * > *,
-#main-view #tempwidgets.row.divider > dztemperaturewidget,
-#main-view #tempwidgets.row.divider > dztemperaturewidget > *,
-#main-view #tempwidgets.row.divider > dztemperaturewidget > * > *,
-#main-view #tempwidgets.row.divider > dztemperaturewidget > * > * > *,
-#main-view #tempwidgets.row.divider > dztemperaturewidget > * > * > * > *,
-#main-view #tempwidgets.row.divider > dztemperaturewidget > * > * > * > * > *,
-#main-view #weatherwidgets.row.divider > dzweatherwidget,
-#main-view #weatherwidgets.row.divider > dzweatherwidget > *,
-#main-view #weatherwidgets.row.divider > dzweatherwidget > * > *,
-#main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > *,
-#main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > *,
-#main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > * > *,
-#main-view #utilitycontent .row.divider > *,
-#main-view #utilitycontent .row.divider > * > *,
-#main-view #utilitycontent .row.divider > * > * > *,
-#main-view #utilitycontent .row.divider > * > * > * > *,
-#main-view #utilitycontent .row.divider > * > * > * > * > *{
-	margin:0 !important;
-	padding:0 !important;
-	border:none;
-  width: 100%;
-}
-
-div#holder > div.container-fluid > .bannercontent{
-margin: 1% auto !important;
-width: 90%;
-}
 
 div[class^="status"] td#name {
   border:none !important;
