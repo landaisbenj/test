@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $(mutationsList).each(function(index, item){
             if (item.type === 'childList'){
                 if (item.addedNodes.length > 0){
-		
+		$('#main-view table[id^="itemtable"] #type').find('br').remove();
 			//Multiple div row suppressed
                     if ($('#main-view div.row').next().length != 0 ){
 			$('#main-view div.row').each(function(){
