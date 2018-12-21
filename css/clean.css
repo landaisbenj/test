@@ -11,7 +11,17 @@ div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
 div#holder > div.container-fluid > .bannercontent,
-div#holder #main-view > *,
+div#holder #main-view > *{
+	margin:0 !important;
+	padding:0 !important;
+	border:none;
+  width: 100%;
+}
+
+div#holder > div.container-fluid > .bannercontent{
+margin: 1% auto !important;
+width: 90%;
+}
 
 #main-view #dashcontent .row.divider > *,
 #main-view #dashcontent .row.divider > * > *,
@@ -48,9 +58,7 @@ div#holder #main-view > *,
 	padding:0 !important;
 	border:none;
   width: 100%;
-}
-
-div#holder > div.container-fluid > .bannercontent{
-margin: 1% auto !important;
-width: 90%;
+	height: 100%;
+	border:none;
+	border-radius:0;
 }
