@@ -2,6 +2,7 @@
 @import url("css/media/min 992.css"); /* Adds visual extras. */
 @import url("css/media/max 480.css"); /* Adds visual extras. */
 @import url("css/clean.css"); /*Clean old css style on domoticz*/
+@import url("css/page_login.css");
 	
 :root {
   --main-color:#021a37;
