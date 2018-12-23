@@ -12,7 +12,12 @@ div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
 div#holder > div.container-fluid > .bannercontent,
-div#holder #main-view > *{
+div#holder #main-view > #dashcontent,
+div#holder #main-view > #lightcontent,
+div#holder #main-view > #scenecontent,
+div#holder #main-view > #tempwidgets,
+div#holder #main-view > #weatherwidgets,
+div#holder #main-view > #utilitycontent{
 	margin:0 !important;
 	padding:0 !important;
 	border:none;
