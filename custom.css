@@ -31,16 +31,69 @@ body{
 
 /* Item */
 table[id^="itemtable"] tbody tr {
+  border-radius:6px !important;
   margin:0 !important;
   
   display: grid;
-  gap:10px;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+    grid-template-areas:
+      '. . . . . . .'
+    '. name name bigtext bigtext bigtext .'
+    '. status status status status status .'
+    '. type-action type-action type-action type-action type-action .'
+    '. type type type type type .'
+    '. img1 img2 img3 lastupdate lastupdate .'
+    '. option option option option option .'
+      '. . . . . . .';
+  
+  align-items: end;
+  justify-items: end;
+  justify-content: stretch;	
+  align-content: stretch;	
+  
+  position: relative !important;
+  
+  
+  
+  
+  gap:1px;
   justify-self: stretch;
   align-self: stretch;
   background-color:var(--main-item-color) !important;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   
 }
+
+[id^="itemtable"] tbody tr td#name{grid-area: name; justify-self: start;}
+[id^="itemtable"] tbody tr td#bigtext{grid-area: bigtext;}
+[id^="itemtable"] tbody tr td#status{grid-area: status;}
+/* Slider */
+[id^="itemtable"] tbody tr td#type > div#slider,
+/* Selector */
+[id^="itemtable"] tbody tr td#type > div span[id^="selector"],
+/* BTN Selector */
+[id^="itemtable"] tbody tr td#type > div[id^="selector"]{grid-area: type-action;}
+[id^="itemtable"] tbody tr td#img img,[id^="itemtable"] tbody tr td#img{grid-area: img1; justify-self: stretch;}
+[id^="itemtable"] tbody tr td#img2 img,[id^="itemtable"] tbody tr td#img2{grid-area: img2; justify-self: stretch;}
+[id^="itemtable"] tbody tr td#img3 img,[id^="itemtable"] tbody tr td#img3{grid-area: img3; justify-self: stretch;}
+[id^="itemtable"] tbody tr td#type{grid-area: type;}
+[id^="itemtable"] tbody tr td#lastupdate{grid-area: lastupdate;}
+table[id^="itemtable"] tbody tr td.options{grid-area: option; justify-self: stretch;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* item status */
 div.item.statusNormal tbody tr {
