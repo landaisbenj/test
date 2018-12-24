@@ -43,18 +43,20 @@ table[id^="itemtable"] tbody tr {
   
   
   display: grid;
-  grid-auto-rows: auto;
-  grid-auto-columns: auto;
-    grid-template-areas:
+  grid-template-areas:
     'name name bigtext bigtext'
     'status status status status'
     'action action action action'
     'type type type type'
     'img1 img2 img3 lastupdate'
     'option option option option';
+
+	grid-template-columns:repeat(4, auto);
+	grid-template-rows:repeat(6, auto);
   
-  justify-content: space-around; 
-  align-content: space-around;	
+  
+  justify-content: stretch; 
+  align-content: stretch;	
   
   justify-items: end;
   align-items: center;
@@ -106,7 +108,8 @@ background-color: gray !important;
 
 /* Type text design */
 [id^="itemtable"] tbody tr td#type{
-  grid-area: type;
+  grid-area: type !important;
+  position: relative !important;
 }
 
 /* Type action design */
@@ -116,9 +119,11 @@ background-color: gray !important;
 [id^="itemtable"] tbody tr td > div#slider,
 [id^="itemtable"] tbody tr td > div span[id^="selector"],
 [id^="itemtable"] tbody tr td > div[id^="selector"]{
-  grid-area: action;
+  grid-area: action !important;
   width: 100% !important;
   margin:0!important;
+  display: block;
+  left:0!important;
 }
 
 /* Icon design */
