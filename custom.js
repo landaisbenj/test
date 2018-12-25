@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var observer = new MutationObserver(function(mutationsList, observer) {
         $(mutationsList).each(function(index, item){
             if (item.type === 'childList'){
+		    //For each node added:
                 if (item.addedNodes.length > 0){
-			//Multiple div row suppressed
+			//Suppress multiple row divider
                     if ($('#main-view div.row').next().length != 0 ){
 			$('#main-view div.row').each(function(){
 				x=$(this).nextAll().children().detach();
@@ -29,10 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
         childList: true, 
         subtree: true 
     });
-    
 
 	
-//modification
+//DOM's modification
+    if ($('#holder #copyright').length != 0){
+	$('#holder #copyright').insertAfter('#holder');
+    };
     //new navbar 
     if ($('.navbar-fixed-top').length != 0){
 	    $('.navbar').toggleClass('navbar-fixed-top navbar-static-top');
