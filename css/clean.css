@@ -3,27 +3,17 @@
 #main-view .row.divider:after,
 #main-view .row.divider .clearfix,
 div.navbar-inner a#version,
-/* suppression */ [id^="itemtable"] tbody tr td#type > br,
 /*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
 	display:none !important;
 }
+
+html,
 body,
 div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
 div#holder > div.container-fluid > .bannercontent,
-div#holder #main-view .row.divider,
-div#holder #main-view > div.container{
-  margin:0 !important;
-  padding:0 !important;
-  border:none;
-  width: 100%;
-}
-
-div#holder > div.container-fluid > .bannercontent{
-margin: 1% auto !important;
-width: 90%;
-}
+div#holder #main-view > *,
 
 #main-view div.row.divider > *,
 #main-view div.row.divider > * > *,
@@ -44,12 +34,9 @@ width: 90%;
 #main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > *,
 #main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > *,
 #main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > * > *{
-  margin:0;
-  padding:0;
-  border:none;
   width: 100%;
-  height: 100%;
-  border:none;
-  border-radius:0;
+	margin:0 !important;
+	padding:0 !important;
+	border:none;
+	height: auto;
 }
-
