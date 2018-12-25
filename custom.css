@@ -20,9 +20,21 @@ body{
   color:black;
 }
 
+body div.navbar{
+  position:relative;
+}
+
+body #holder {
+  width: 95%;
+  margin: 1% auto;
+  height: auto !important;
+}
+
+
+
 /* */
 #main-view .row.divider {
-
+  
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
