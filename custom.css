@@ -70,8 +70,8 @@ table[id^="itemtable"] tbody tr {
 	grid-template-rows:repeat(6, auto);
   
   
-  justify-content: stretch; 
-  align-content: stretch;	
+  justify-content: space-around; 
+  align-content: space-evenly;	
   
   justify-items: end;
   align-items: center;
