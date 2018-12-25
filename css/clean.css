@@ -12,10 +12,11 @@ div.navbar,
 div.navbar-inner,
 div#holder > div.container-fluid,
 div#holder > div.container-fluid > .bannercontent,
+div#holder #main-view .row.divider,
 div#holder #main-view > div.container{
-	margin:0 !important;
-	padding:0 !important;
-	border:none;
+  margin:0 !important;
+  padding:0 !important;
+  border:none;
   width: 100%;
 }
 
@@ -43,12 +44,12 @@ width: 90%;
 #main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > *,
 #main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > *,
 #main-view #weatherwidgets.row.divider > dzweatherwidget > * > * > * > * > *{
-	margin:0;
-	padding:0;
-	border:none;
+  margin:0;
+  padding:0;
+  border:none;
   width: 100%;
-	height: 100%;
-	border:none;
-	border-radius:0;
+  height: 100%;
+  border:none;
+  border-radius:0;
 }
 
