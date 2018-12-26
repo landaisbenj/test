@@ -31,12 +31,12 @@ Selector {
 html{
   max-width: 100% !important;
   height: auto !important;
-  min-height: 100% !important;
+  min-height: 100vh !important;
 }
 body{
   max-width: 100% !important;
   height: auto !important;
-  min-height: 100% !important;
+  min-height: 100vh !important;
   
   background: var(--secondary-color) !important;
   color:black;
@@ -46,9 +46,12 @@ body{
 
 body > #holder {
   width: 95%;
+  height: auto !important;
+  min-height: 100vh !important;
   
-  margin: 1% auto;
+  margin: 0 auto;
 }
+
 
 body > #copyright{
   display: none !important;
