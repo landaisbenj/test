@@ -50,7 +50,7 @@
 }
 #login {
   background-image: none !important;
-  background-color: var(--main-item-bg-color) !important;
+  background-color: var(--main-item-color) !important;
 }
 
 #login #submit {
