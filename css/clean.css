@@ -3,7 +3,6 @@
 #main-view .row.divider:after,
 #main-view .row.divider .clearfix,
 
-#copyright,
 div.navbar-inner a#version,
 /* suppression */ [id^="itemtable"] tbody tr td#type > br,
 /*divider dans le menu dropdown*/.navbar .nav .dropdown-menu li.divider{
