@@ -1,5 +1,7 @@
 body > div.navbar{
   position:relative;
+  
+  margin-bottom: 1vh;
 }
 
 header#container-logo {
