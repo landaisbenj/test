@@ -1,3 +1,7 @@
+body > div.navbar{
+  position:relative;
+}
+
 header#container-logo {
   background: var(--secondary-blue-color);
   background: -moz-linear-gradient(left, var(--secondary-blue-color) 0%, var(--main-blue-color) 100%);
