@@ -14,22 +14,31 @@
 
 
 /*New design*/
-
+html{
+  max-width: 100vw;
+  min-height: 100vh;
+}
 body{
+  max-width: 100vw;
+  min-height: 100vh;
   background: var(--secondary-color) !important;
   color:black;
 }
 
-body div.navbar{
+body > div.navbar{
   position:relative;
 }
 
-body #holder {
+body > #holder {
   width: 95%;
+  height: 100%;
+  
   margin: 1% auto;
-  height: auto !important;
 }
 
+body > #copyright{
+  display: none !important;
+}
 
 
 /* */
