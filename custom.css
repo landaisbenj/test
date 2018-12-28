@@ -30,12 +30,12 @@ Selector {
 /*New design*/
 html{
   max-width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
   min-height: 100vh !important;
 }
 body{
   max-width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
   min-height: 100vh !important;
   
   background: var(--secondary-color) !important;
