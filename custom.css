@@ -66,6 +66,8 @@ body > #copyright{
   grid-auto-rows: 1fr;
   grid-template-columns:repeat(3, 25vw);
 	
+	grid-row-gap: 1em;
+	
   justify-content: space-around;
   align-content: space-between;
 	
