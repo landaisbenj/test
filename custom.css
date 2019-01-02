@@ -90,6 +90,7 @@ table[id^="itemtable"] tbody tr {
     'name name bigtext bigtext'
     'status status status status'
     'action action action action'
+    'img1 img2 img3 type'
     'img1 img2 img3 lastupdate'
     'option option option option';
 
@@ -150,8 +151,8 @@ background-color: gray !important;
 
 /* Type text design */
 [id^="itemtable"] tbody tr td#type{
-  grid-area: lastupdate;
-  position: relative !important;
+  grid-area: type;
+  display: block;
 }
 
 /* Type action design */
