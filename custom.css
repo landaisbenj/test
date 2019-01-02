@@ -94,7 +94,7 @@ table[id^="itemtable"] tbody tr {
     'img1 img2 img3 lastupdate'
     'option option option option';
 
-	grid-template-columns:repeat(4, auto);
+	grid-template-columns:32px 16px 16px 1fr;
 	grid-template-rows:repeat(6, auto);
   
   
@@ -152,7 +152,6 @@ background-color: gray !important;
 /* Type text design */
 [id^="itemtable"] tbody tr td#type{
   grid-area: type;
-  display: block;
 }
 
 /* Type action design */
@@ -161,7 +160,8 @@ background-color: gray !important;
   /* BTN Selector */
 [id^="itemtable"] tbody tr td > div#slider,
 [id^="itemtable"] tbody tr td > div span[id^="selector"],
-[id^="itemtable"] tbody tr td > div[id^="selector"]{
+[id^="itemtable"] tbody tr td > div[id^="selector"],
+[id^="itemtable"] tbody tr td#input{
   grid-area: action !important;
   width: 100% !important;
   margin:0!important;
