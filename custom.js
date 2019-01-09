@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			if ($('#main-view').find('.item').length > 0) {
 	if (($('#lightcontent #type > div').length != 0)){
 		$('.item tbody tr').has('td#type > div').each(function(){
-			$('<td id="input">').insertAfter($(this).children('td#type'))
+			$('<td class="input">').insertAfter($(this).children('td#type'))
 			x=$(this).find('td#type > div').detach();
-			$(this).find('td#input').append(x);
+			$(this).find('td.input').append(x);
 		})
 	};
 };
@@ -54,13 +54,3 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 });
-
-
-
-
-
-
-
-
-
-
