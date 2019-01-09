@@ -67,8 +67,6 @@ body > #copyright{
 	
 	gap: 2em;
 	
-  justify-content: space-around;
-  align-content: space-between;
 	
 }
 
@@ -78,30 +76,29 @@ body > #copyright{
 
 /* Item */
 table[id^="itemtable"] tbody tr {
+  width: auto !important;
   margin:0 !important;
   padding: 0 !important;
-  justify-self: stretch;
-  align-self: stretch;
   
   
-  display: grid;
+  display: grid !important;
   grid-template-areas:
-    'name name bigtext bigtext'
-    'status status status status'
-    'action action action action'
-    'img1 img2 img3 type'
-    'img1 img2 img3 lastupdate'
-    'option option option option';
+    'name name name name bigtext'
+    'type type type type type'
+    'status status status status status'
+    'img1 img2 action action action'
+    'img1 img2 img3 lastupdate lastupdate'
+    'option option option option option';
 
-	grid-template-columns:32px 16px 16px 1fr;
-	grid-template-rows:repeat(6, auto);
+	grid-template-columns: 48px 32px 32px 1fr auto;
+	grid-template-rows: auto auto-fill auto auto 16px;
   
   
-  justify-content: space-around; 
-  align-content: space-evenly;	
+  justify-content: space-around !important; 
+  align-content: space-around !important;	
   
   justify-items: end;
-  align-items: center;
+  align-items: end;
   
   
   
@@ -131,6 +128,9 @@ background-color: gray !important;
 [id^="itemtable"] tbody tr td#name{
   grid-area: name;
   justify-self: start;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  font-size: 1.1em;
 }
 
 /* Big text design */
@@ -140,6 +140,7 @@ background-color: gray !important;
   text-transform:capitalize;
   color: var(--main-blue-color);
   font-weight: 520;
+  
   font-size: 1.5em;
 }
 
@@ -157,15 +158,50 @@ background-color: gray !important;
   /* Slider */
   /* Selector */
   /* BTN Selector */
+
+[id^="itemtable"] tbody tr td.input{
+  position: relative;
+  grid-area: action;
+  justify-self: center;
+  align-self: center;
+  width: 100% !important;
+  height: auto !important;
+}
+
+
 [id^="itemtable"] tbody tr td > div#slider,
 [id^="itemtable"] tbody tr td > div span[id^="selector"],
-[id^="itemtable"] tbody tr td > div[id^="selector"],
-[id^="itemtable"] tbody tr td#input{
-  grid-area: action !important;
-  width: 100% !important;
+[id^="itemtable"] tbody tr td > div[id^="selector"]{
+  position: relative;
+  width: auto !important;
   margin:0!important;
-  display: block;
-  left:0!important;
+  display: block !important;
+}
+
+
+[id^="itemtable"] tbody tr td > div[id^="selector"]{
+  overflow-x: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[id^="itemtable"] tbody tr td img{
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: auto;
+  
 }
 
 /* Icon design */
