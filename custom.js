@@ -1,3 +1,7 @@
+
+
+$.ajax({url: 'acttheme/js/functions.js', async: false, dataType: 'script'});
+
 document.addEventListener('DOMContentLoaded', function () {
 //DOM Construction
 //live modification	
@@ -46,8 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	$('#holder #copyright').insertAfter('#holder');
     };
     //new navbar 
-    if ($('.navbar-fixed-top').length != 0){
-    };
     $('div.navbar').prepend('<header id="container-logo"></header>');
     $('header#container-logo').append('<div id="header-menu"></div>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>').append('<div id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></div>');
     $('<img id="notyIcon" src="images/notify.png"/>').appendTo('#notify')
