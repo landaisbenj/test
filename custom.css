@@ -3,7 +3,31 @@
 @import url("css/media/max 480.css"); /* Adds visual extras. */
 @import url("css/clean.css"); /*Clean old css style on domoticz*/
 @import url("css/page_login.css");
-	
+/*.item,
+dztemperaturewidget,
+dzweatherwidget{
+  margin: 0!important;
+  padding: 0!important;
+  height: 100% !important;
+  width: 100%!important;
+  
+}
+.item{
+  
+  background-color: white !important;
+  border: 1px solid black !important;
+  
+}
+
+
+.item section,
+.item tbody,
+.item tr{
+  display: block!important;
+  background: none !important;
+  height: auto !important;
+}
+*/	
 :root {
   --main-color:#021a37;
   --secondary-color:#f1f5fa;
