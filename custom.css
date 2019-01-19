@@ -83,10 +83,35 @@ body > #copyright{
 }
 
 
+#dashcontent .span4,
+#lightcontent .span4,
+#scenecontent .span4,
+#tempwidget .span4,
+#weatherwidget .span4,
+#utilitycontent .span4{
+  
+}
+
+.item, section, table[id^="itemtable"], table[id^="itemtable"] tbody, table[id^="itemtable"] tbody tr{
+  
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Item */
 table[id^="itemtable"] tbody tr {
-  width: auto !important;
   margin:0 !important;
   padding: 0 !important;
   
