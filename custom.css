@@ -52,7 +52,11 @@ Selector {
 
 
 /*New design*/
+body{
 
+  background: var(--secondary-color) !important;
+  color:black;
+}
 
 
 body > #copyright{
