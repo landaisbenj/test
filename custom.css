@@ -53,39 +53,64 @@ body#onMobile #dashcontent section tbody tr{
   background: white;
   max-width: auto;
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 40px;
+  grid-template-columns: auto-fill 1fr;
+  grid-template-rows: minmax(auto-fill);
   justify-items: end;
+  padding: 2px 1px;
+  border-radius: 5px;
   gap:10px;
   width: 100%;
   height: auto;
 }
-body#onMobile #dashcontent .row tbody tr td#name{
+
+body#onMobile #dashcontent section tbody tr td#name{
   flex-shrink: 0;
   justify-self: start;
 }
 
 
 
-body#onMobile #dashcontent .row tbody tr td .dimslider,
-body#onMobile #dashcontent .row tbody tr div.selectorlevels,
-body#onMobile #dashcontent .row tbody tr td[colspan]{
-display: block!important;
-  width: 100%!important;
-  height: auto !important;
+
+
+body#onMobile #dashcontent section thead{
+  margin: 0 !important;
+  height: 20px !important;
 }
 
 
 
-div#slider,
-[id^="itemtable"] tbody tr td > div span[id^="selector"],
-[id^="itemtable"] tbody tr td > div[id^="selector"],
-body#onMobile #dashcontent .row tbody tr td:not(#name):not(#status) div[id^="selector"]{
-  overflow: auto;
-  width: 100%;
-  margin:0 !important;
-  display: block;
+
+body#onMobile #dashcontent section tbody tr td[colspan] > div > span.ui-selectmenu-button {
+  width: 90% !important;
 }
+
+
+
+body#onMobile #dashcontent section tbody tr td[colspan] > div > div.btn-group{
+  display: block!important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  
+}
+body#onMobile #dashcontent section tbody tr td[colspan] > div{
+  display: block !important;
+  position: relative !important;
+  margin:0!important;
+  width: 90% !important;
+  margin: auto!important;
+}
+
+
+body#onMobile #dashcontent section tbody tr td:not(#name):not(#status){
+  
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+
+
+
+
 
 
 /*New design*/
