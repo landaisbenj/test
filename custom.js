@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
             if (item.type === 'childList'){
 		    //For each node added:
                 if (item.addedNodes.length > 0){
+			//new search
+	
+			//if ($('#main-view').length != 0 ){
+//$('#prebannav tbody tr').append('<td id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></td>')
+//			}
+			
+			
+			
+			
 			//Suppress multiple row divider
                     if ($('#main-view div.row').next().length != 0 ){
 			$('#main-view div.row').each(function(){
@@ -51,8 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     //new navbar 
     $('div.navbar').prepend('<header id="container-logo"></header>');
-    $('header#container-logo').append('<div id="header-menu"></div>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>').append('<div id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></div>');
+    $('header#container-logo').append('<div id="header-menu"></div>').append('<img class="header-logo" src="images/logo.png">').append('<div id="notify"></div>');
     $('<img id="notyIcon" src="images/notify.png"/>').appendTo('#notify')
-    
     
 });

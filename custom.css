@@ -49,40 +49,108 @@ Selector {
 }
 
 */
+body#onMobile #dashcontent section tbody tr{
+  background: white;
+  max-width: auto;
+  display: grid;
+  grid-template-columns: auto-fill 1fr;
+  grid-template-rows: minmax(auto-fill);
+  justify-items: end;
+  padding: 2px 1px;
+  border-radius: 5px;
+  gap:10px;
+  width: 100%;
+  height: auto;
+}
+
+body#onMobile #dashcontent section tbody tr td#name{
+  flex-shrink: 0;
+  justify-self: start;
+}
+
+
+
+
+
+body#onMobile #dashcontent section thead{
+  margin: 0 !important;
+  height: 20px !important;
+}
+
+
+
+
+body#onMobile #dashcontent section tbody tr td[colspan] > div > span.ui-selectmenu-button {
+  width: 90% !important;
+}
+
+
+
+body#onMobile #dashcontent section tbody tr td[colspan] > div > div.btn-group{
+  display: block!important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  
+}
+body#onMobile #dashcontent section tbody tr td[colspan] > div{
+  display: block !important;
+  position: relative !important;
+  margin:0!important;
+  width: 90% !important;
+  margin: auto!important;
+}
+
+
+body#onMobile #dashcontent section tbody tr td:not(#name):not(#status){
+  
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+
+
+
+
 
 
 /*New design*/
-html{
-  max-width: 100% !important;
-  height: 100% !important;
-  min-height: 100vh !important;
-}
 body{
-  max-width: 100% !important;
-  height: 100% !important;
-  min-height: 100vh !important;
-  
+
   background: var(--secondary-color) !important;
   color:black;
-}
-
-
-
-body > #holder {
-  width: 95%;
-  height: auto !important;
-  min-height: 100vh !important;
-  
-  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  padding: 0;
 }
 
 
 body > #copyright{
   display: none !important;
+  position: relative;
 }
 
 
 /* */
+#holder,
+#holder > .container-fluid,
+#holder > .container-fluid > .bannercontent,
+#main-view > .container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+
+#holder{
+  padding: 0 5%;
+  margin-bottom: 10px;
+  width: auto;
+  display: block;
+}
+
+
 #main-view .row.divider {
   
   display: grid;
@@ -91,7 +159,8 @@ body > #copyright{
 	
 	gap: 2em;
 	
-	
+  margin: 0;
+  padding: 0;
 }
 
 #main-view #dashcontent .row.divider {
@@ -101,10 +170,42 @@ body > #copyright{
 }
 
 
+#dashcontent .span4,
+#lightcontent .span4,
+#scenecontent .span4,
+#tempwidget .span4,
+#weatherwidget .span4,
+#utilitycontent .span4{
+  
+}
+
+.span4,
+.item,
+section,
+table[id^="itemtable"],
+table[id^="itemtable"] tbody,
+table[id^="itemtable"] tbody tr{
+  
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Item */
 table[id^="itemtable"] tbody tr {
-  width: auto !important;
   margin:0 !important;
   padding: 0 !important;
   
@@ -293,10 +394,22 @@ table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]:hover{
   color:white;
 	
 }
-table[id^="itemtable"] tbody tr td.options a[class^="btnsmall-sel"]{
+table[id^="itemtable"] tbody tr td.options a[class^="btnsmall-sel"],
+table[id^="itemtable"] tbody tr td.options a[ng-class*="btnsmall-sel"]{
 	background: var(--secondary-blue-color);	
   color:white;
 }
 
 
-
+#main-view a.btnstyle,
+#main-view a.btnstylerev{
+  background: transparent;
+  color:black;
+  border-bottom: 1px solid black;
+  border-radius:0;
+  padding: 0 1em;
+}
+#main-view a.btnstyle:before,
+#main-view a.btnstyle:after{
+ 
+}
