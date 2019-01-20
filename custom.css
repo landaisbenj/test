@@ -331,10 +331,21 @@ table[id^="itemtable"] tbody tr td.options a[class^="btnsmall"]:hover{
   color:white;
 	
 }
-table[id^="itemtable"] tbody tr td.options a[class^="btnsmall-sel"]{
+table[id^="itemtable"] tbody tr td.options a[class^="btnsmall-sel"],
+table[id^="itemtable"] tbody tr td.options a[ng-class*="btnsmall-sel"]{
 	background: var(--secondary-blue-color);	
   color:white;
 }
 
 
-
+#main-view a.btnstyle{
+  background: transparent;
+  color:black;
+  border-bottom: 1px solid black;
+  border-radius:0;
+  padding: 0 1em;
+}
+#main-view a.btnstyle:before,
+#main-view a.btnstyle:after{
+ 
+}
