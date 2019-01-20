@@ -56,15 +56,36 @@ body{
 
   background: var(--secondary-color) !important;
   color:black;
+  height: auto;
 }
 
 
 body > #copyright{
-  display: none !important;
+  /*! display: none !important; */
+  position: absolute;
+  bottom: 0;
 }
 
 
 /* */
+#holder,
+#holder > .container-fluid,
+#holder > .container-fluid > .bannercontent,
+#main-view > .container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+
+#holder{
+  padding: 0 5%;
+  margin-bottom: 5%;
+  width: auto;
+}
+
+
 #main-view .row.divider {
   
   display: grid;
@@ -73,8 +94,8 @@ body > #copyright{
 	
 	gap: 2em;
 	
-	
   margin: 0;
+  padding: 0;
 }
 
 #main-view #dashcontent .row.divider {
@@ -93,7 +114,12 @@ body > #copyright{
   
 }
 
-.span4, .item, section, table[id^="itemtable"], table[id^="itemtable"] tbody, table[id^="itemtable"] tbody tr{
+.span4,
+.item,
+section,
+table[id^="itemtable"],
+table[id^="itemtable"] tbody,
+table[id^="itemtable"] tbody tr{
   
   display: block;
   width: 100%;
