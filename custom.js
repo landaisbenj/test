@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (item.addedNodes.length > 0){
 			//new search
 	
-			if ($('#main-view').length != 0 ){
-$('#prebannav tbody tr').append('<td id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></td>')
-			}
+			//if ($('#main-view').length != 0 ){
+//$('#prebannav tbody tr').append('<td id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></td>')
+//			}
 			
 			
 			
