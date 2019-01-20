@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		    //For each node added:
                 if (item.addedNodes.length > 0){
 			//new search
-	$('#prebannav').append('<td id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></td>')
+	$('#prebannav tbody tr').append('<td id="search"><input onkeyup="" placeholder="Rechercher" title="Rechercher" id="searchInput" type="text"></td>')
     
 			
 			
