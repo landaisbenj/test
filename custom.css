@@ -49,6 +49,43 @@ Selector {
 }
 
 */
+body#onMobile #dashcontent section tbody tr{
+  background: white;
+  max-width: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 40px;
+  justify-items: end;
+  gap:10px;
+  width: 100%;
+  height: auto;
+}
+body#onMobile #dashcontent .row tbody tr td#name{
+  flex-shrink: 0;
+  justify-self: start;
+}
+
+
+
+body#onMobile #dashcontent .row tbody tr td .dimslider,
+body#onMobile #dashcontent .row tbody tr div.selectorlevels,
+body#onMobile #dashcontent .row tbody tr td[colspan]{
+display: block!important;
+  width: 100%!important;
+  height: auto !important;
+}
+
+
+
+div#slider,
+[id^="itemtable"] tbody tr td > div span[id^="selector"],
+[id^="itemtable"] tbody tr td > div[id^="selector"],
+body#onMobile #dashcontent .row tbody tr td:not(#name):not(#status) div[id^="selector"]{
+  overflow: auto;
+  width: 100%;
+  margin:0 !important;
+  display: block;
+}
 
 
 /*New design*/
@@ -59,6 +96,7 @@ body{
   height: auto;
   min-height: 100%;
   position: relative;
+  padding: 0;
 }
 
 
