@@ -57,13 +57,14 @@ body{
   background: var(--secondary-color) !important;
   color:black;
   height: auto;
+  min-height: 100%;
+  position: relative;
 }
 
 
 body > #copyright{
-  /*! display: none !important; */
-  position: absolute;
-  bottom: 0;
+  display: none !important;
+  position: relative;
 }
 
 
@@ -81,8 +82,9 @@ body > #copyright{
 
 #holder{
   padding: 0 5%;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
   width: auto;
+  display: block;
 }
 
 
