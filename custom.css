@@ -338,7 +338,8 @@ table[id^="itemtable"] tbody tr td.options a[ng-class*="btnsmall-sel"]{
 }
 
 
-#main-view a.btnstyle{
+#main-view a.btnstyle,
+#main-view a.btnstylerev{
   background: transparent;
   color:black;
   border-bottom: 1px solid black;
