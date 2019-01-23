@@ -3,6 +3,8 @@
 @import url("css/media/max 480.css"); /* Adds visual extras. */
 @import url("css/clean.css"); /*Clean old css style on domoticz*/
 @import url("css/page_login.css");
+@import url("css/datatables_wrapper.css");
+
 /*.item,
 dztemperaturewidget,
 dzweatherwidget{
