@@ -1,0 +1,50 @@
+
+/* Data Tables */
+.dataTables_wrapper > div:first-child,
+.dataTables_wrapper > div:last-child{
+  background: transparent;
+  border:none !important;
+}
+
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info {
+	color: var(--secondary-text-color);
+}
+
+.dataTables_wrapper .ui-widget-header .ui-state-default {
+  background: transparent;
+  border: none !important;
+  color: var(--main-text-color) !important;
+}
+
+table.dataTable thead th{
+  background: var(--main-item-color);
+	color: var(--secondary-text-color);
+	height:35px;
+	padding-right:10px;
+	text-align: -webkit-left;
+  border: none !important;
+}
+
+.dataTables_wrapper .dataTable tr{
+  border: 1px solid var(--main-border-color);
+}
+
+.dataTables_wrapper tr.odd,
+.dataTables_wrapper tr.even {
+	height:45px;
+	color: var(--main-text-color) !important;
+	background-color: transparent;
+}
+.dataTables_wrapper tr.even {
+	background-color: var(--main-item-color);
+}
+tr.odd td.sorting_1, tr.even td.sorting_1{
+  background-color: transparent;
+}
+.dataTables_wrapper table tbody tr.odd.row_selected td,
+.dataTables_wrapper table tbody tr.even.row_selected td{
+  background: var(--main-blue-color) !important;
+  opacity: .75;
+}
