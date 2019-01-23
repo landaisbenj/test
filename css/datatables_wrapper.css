@@ -48,3 +48,7 @@ tr.odd td.sorting_1, tr.even td.sorting_1{
   background: var(--main-blue-color) !important;
   opacity: .75;
 }
+
+.dataTables_paginate{
+	width:auto;
+}
