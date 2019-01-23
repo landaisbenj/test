@@ -50,5 +50,5 @@ tr.odd td.sorting_1, tr.even td.sorting_1{
 }
 
 .dataTables_paginate{
-	width:auto;
+	width:auto !important;
 }
