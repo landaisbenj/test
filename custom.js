@@ -3,6 +3,7 @@
 $.ajax({url: 'acttheme/js/functions.js', async: false, dataType: 'script'});
 
 document.addEventListener('DOMContentLoaded', function () {
+	$.ajax({url: 'acttheme/js/setting_page.js', async: false, dataType: 'script'});
 //DOM Construction
 //live modification	
     console.log('DomContent Loaded')
