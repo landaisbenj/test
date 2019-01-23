@@ -4,6 +4,8 @@
 @import url("css/clean.css"); /*Clean old css style on domoticz*/
 @import url("css/page_login.css");
 @import url("css/datatables_wrapper.css");
+@import url("css/body_onmobile.css");
+
 
 /*.item,
 dztemperaturewidget,
