@@ -5,39 +5,16 @@
 @import url("css/page_login.css");
 @import url("css/datatables_wrapper.css");
 @import url("css/body_onmobile.css");
-
-
-/*.item,
-dztemperaturewidget,
-dzweatherwidget{
-  margin: 0!important;
-  padding: 0!important;
-  height: 100% !important;
-  width: 100%!important;
-  
-}
-.item{
-  
-  background-color: white !important;
-  border: 1px solid black !important;
-  
-}
-
-
-.item section,
-.item tbody,
-.item tr{
-  display: block!important;
-  background: none !important;
-  height: auto !important;
-}
-*/	
+	
 :root {
   --main-color:#021a37;
   --secondary-color:#f1f5fa;
   --main-blue-color:#2f91c4;
   --secondary-blue-color:#0bcdc7;
   --main-item-color:white;
+  --main-text-color: #1a1a1a;
+  --secondary-text-color: gray;
+  --main-border-color: #dedede;
 }
 
 
