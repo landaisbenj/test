@@ -1,4 +1,4 @@
-* functions.js */
+// functions.js
 
 // main switchers and submenus logic function
 function applySwitchersAndSubmenus() {
