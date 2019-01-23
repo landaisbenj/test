@@ -1,0 +1,59 @@
+
+*/
+body#onMobile #dashcontent section tbody tr{
+  background: white;
+  max-width: auto;
+  display: grid;
+  grid-template-columns: auto-fill 1fr;
+  grid-template-rows: minmax(auto-fill);
+  justify-items: end;
+  padding: 2px 1px;
+  border-radius: 5px;
+  gap:10px;
+  width: 100%;
+  height: auto;
+}
+
+body#onMobile #dashcontent section tbody tr td#name{
+  flex-shrink: 0;
+  justify-self: start;
+}
+
+
+
+
+
+body#onMobile #dashcontent section thead{
+  margin: 0 !important;
+  height: 20px !important;
+}
+
+
+
+
+body#onMobile #dashcontent section tbody tr td[colspan] > div > span.ui-selectmenu-button {
+  width: 90% !important;
+}
+
+
+
+body#onMobile #dashcontent section tbody tr td[colspan] > div > div.btn-group{
+  display: block!important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  
+}
+body#onMobile #dashcontent section tbody tr td[colspan] > div{
+  display: block !important;
+  position: relative !important;
+  margin:0!important;
+  width: 90% !important;
+  margin: auto!important;
+}
+
+
+body#onMobile #dashcontent section tbody tr td:not(#name):not(#status){
+  
+  width: 100% !important;
+  overflow-x: auto !important;
+}
